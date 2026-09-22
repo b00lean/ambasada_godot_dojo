@@ -83,6 +83,12 @@ _data = {
 
 [node name="raf" type="Node3D" unique_id=930087524]
 
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1689725844]
+transform = Transform3D(0.006536687, -0.36676726, 0.9302898, 0.0025770287, 0.93031275, 0.36675823, -0.9999753, 0, 0.007026333, 1.2372181, 1.7765889, -0.787539)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1635935203]
+transform = Transform3D(0.006536687, -0.36676726, 0.9302898, 0.0025770287, 0.93031275, 0.3667582, -0.9999753, 0, 0.0070263324, 1.2372181, 1.7765889, -0.787539)
+
 [node name="dvere" type="Node3D" parent="." unique_id=1692322156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09477866, 0.95026493, -0.12861139)
 script = ExtResource("1_r6pv8")
