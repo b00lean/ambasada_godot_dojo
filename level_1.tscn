@@ -2,11 +2,11 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_q7aek"]
 
-[node name="Level1" type="Node3D" unique_id=1442929259]
+[node name="1 level buuuuuuuuuuuuuuggggggggggggg" type="Node3D" unique_id=1442929259]
 
-[node name="Krabice" type="MeshInstance3D" parent="." unique_id=86683648]
+	[node name="Krabice6767" type="MeshInstance3D" parent="." unique_id=86683648]
 mesh = SubResource("BoxMesh_q7aek")
 
-[node name="Krabice2" type="MeshInstance3D" parent="." unique_id=1912517719]
+[node name="Krabice67" type="MeshInstance3D" parent="." unique_id=1912517719]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4691225, 0, 0)
 mesh = SubResource("BoxMesh_q7aek")
