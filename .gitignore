@@ -1,0 +1,19 @@
+# Godot editor cache
+.godot/
+# Imported assets
+.import/
+
+# Exported builds
+/export/
+/exports/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
