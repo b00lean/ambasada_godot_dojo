@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dtvsr1s2iued6"]
+
+[ext_resource type="PackedScene" uid="uid://d34btxlehslvl" path="res://raf_dvere.tscn" id="1_wwted"]
+
+[node name="RafTest" type="Node3D" unique_id=1522477540]
+
+[node name="raf" parent="." unique_id=930087524 instance=ExtResource("1_wwted")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0825884, 0, 0.987576)
+
+[node name="raf2" parent="." unique_id=1208857212 instance=ExtResource("1_wwted")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89486396, 0, 1.3409317)
