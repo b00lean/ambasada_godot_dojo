@@ -60,7 +60,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_vfhyi"]
 resource_name = "zavreni_dveri"
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -87,7 +86,7 @@ _data = {
 transform = Transform3D(0.006536687, -0.36676726, 0.9302898, 0.0025770287, 0.93031275, 0.36675823, -0.9999753, 0, 0.007026333, 1.2372181, 1.7765889, -0.787539)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1635935203]
-transform = Transform3D(0.006536687, -0.36676726, 0.9302898, 0.0025770287, 0.93031275, 0.3667582, -0.9999753, 0, 0.0070263324, 1.2372181, 1.7765889, -0.787539)
+transform = Transform3D(0.99984807, -0.008720532, 0.015094921, 0.0025770282, 0.93031275, 0.36675817, -0.017241323, -0.36666355, 0.93019384, 0.7035022, 1.7765889, 0.9386178)
 
 [node name="dvere" type="Node3D" parent="." unique_id=1692322156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09477866, 0.95026493, -0.12861139)
@@ -112,3 +111,5 @@ shape = SubResource("ConcavePolygonShape3D_j0bur")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=151486360]
 libraries/ = SubResource("AnimationLibrary_vfhyi")
+
+[connection signal="mouse_entered" from="dvere/pevne dvere" to="dvere" method="_on_pevne_dvere_mouse_entered"]
