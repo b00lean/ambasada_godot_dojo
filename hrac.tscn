@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://6ejmesbdqnen"]
+
+[ext_resource type="Material" uid="uid://l5oaao4x4wd6" path="res://materialy/zelena.tres" id="1_ev3f5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q7aek"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_q7aek"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q7aek"]
+
+[node name="Hrac" type="Node3D" unique_id=996799960]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1417096875]
+
+[node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1986013927]
+shape = SubResource("CapsuleShape3D_q7aek")
+
+[node name="skin" type="Node3D" parent="." unique_id=444045301]
+
+[node name="Telo" type="MeshInstance3D" parent="skin" unique_id=2090400126]
+material_override = ExtResource("1_ev3f5")
+mesh = SubResource("CylinderMesh_q7aek")
+
+[node name="Ruce" type="MeshInstance3D" parent="skin" unique_id=1151432947]
+transform = Transform3D(-0.018407766, 0.932555, 0, -0.4276596, -0.040139996, 0, 0, 0, 0.46119452, 0, 0.35603702, 0)
+material_override = ExtResource("1_ev3f5")
+mesh = SubResource("CylinderMesh_q7aek")
+
+[node name="OkoP" type="MeshInstance3D" parent="skin" unique_id=1908787372]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.11332762, 0.7676804, 0.5317259)
+mesh = SubResource("SphereMesh_q7aek")
+
+[node name="OkoL" type="MeshInstance3D" parent="skin" unique_id=839237535]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.2509303, 0.7676804, 0.5317259)
+mesh = SubResource("SphereMesh_q7aek")
