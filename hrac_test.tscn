@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b8f76akv5mh5r"]
+
+[ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="1_6ddew"]
+
+[node name="HracTest" type="Node3D" unique_id=1738360329]
+
+[node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("1_6ddew")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1349358479]
+transform = Transform3D(1, 0, 0, 0, 0.9069631, 0.4212101, 0, -0.4212101, 0.9069631, 0, 1.1057897, 1.8706732)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=965480802]
+transform = Transform3D(1, 0, 0, 0, 0.9075236, 0.42000118, 0, -0.42000118, 0.9075236, 0, 1.3979594, 3.009037)
