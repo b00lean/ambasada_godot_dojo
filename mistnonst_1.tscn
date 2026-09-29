@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://stxo1ak1mfeh"]
+
+[ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="1_kuwdb"]
+[ext_resource type="PackedScene" uid="uid://b8f76akv5mh5r" path="res://hrac_test.tscn" id="2_nfvl1"]
+[ext_resource type="PackedScene" uid="uid://bnk5ubfrreimi" path="res://level_1.tscn" id="3_j2bjl"]
+[ext_resource type="PackedScene" uid="uid://d34btxlehslvl" path="res://raf_dvere.tscn" id="4_xe70d"]
+[ext_resource type="PackedScene" uid="uid://dtvsr1s2iued6" path="res://raf_test.tscn" id="5_3o0bn"]
+[ext_resource type="PackedScene" uid="uid://dwmoetm8g00ei" path="res://mistnost_1/steny.fbx" id="6_dsdym"]
+
+[node name="Node3D" type="Node3D" unique_id=1474800511]
+
+[node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("1_kuwdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17078662, -1.1920929e-07, -0.58223295)
+
+[node name="HracTest" parent="." unique_id=1738360329 instance=ExtResource("2_nfvl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4596286, -0.3169433, -1.4076414)
+
+[node name="1 level buuuuuuuuuuuuuuggggggggggggg" parent="." unique_id=1442929259 instance=ExtResource("3_j2bjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1930337, 0, -0.10318303)
+
+[node name="raf" parent="." unique_id=930087524 instance=ExtResource("4_xe70d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43671882, 0, 1.7602761)
+
+[node name="RafTest" parent="." unique_id=1522477540 instance=ExtResource("5_3o0bn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3383603, 0, -4.0315733)
+
+[node name="49ff73c0-f8b8-41de-825e-e64901b4231a2" parent="." unique_id=308407154 instance=ExtResource("6_dsdym")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6371572, 4.7683716e-07, -3.5945244)

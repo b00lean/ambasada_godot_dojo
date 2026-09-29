@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://kr451dcoik2o"]
+
+[ext_resource type="Texture2D" uid="uid://crrbhpm8nk2v2" path="res://mistnost_1/Plywood_08_1K.png" id="1_3okmn"]
+
+[resource]
+resource_name = "Plywood_08_1K"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_3okmn")
+emission_enabled = true

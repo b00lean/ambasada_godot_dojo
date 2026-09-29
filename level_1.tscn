@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://bnk5ubfrreimi"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_q7aek"]
+[ext_resource type="PackedScene" uid="uid://dwmoetm8g00ei" path="res://mistnost_1/steny.fbx" id="1_hbghi"]
+[ext_resource type="PackedScene" uid="uid://d34btxlehslvl" path="res://raf_dvere.tscn" id="2_hn12h"]
 
-[node name="1 level buuuuuuuuuuuuuuggggggggggggg" type="Node3D" unique_id=1442929259]
+[node name="Node3D" type="Node3D" unique_id=1732787111]
 
-	[node name="Krabice6767" type="MeshInstance3D" parent="." unique_id=86683648]
-mesh = SubResource("BoxMesh_q7aek")
+[node name="raf2" parent="." unique_id=930087524 instance=ExtResource("2_hn12h")]
+transform = Transform3D(0.7059552, 0, 0, 0, 0.6695566, 0, 0, 0, 1, -0.24441126, 0.1587233, 1.3227744)
 
-[node name="Krabice67" type="MeshInstance3D" parent="." unique_id=1912517719]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4691225, 0, 0)
-mesh = SubResource("BoxMesh_q7aek")
+[node name="raf3" parent="." unique_id=217422507 instance=ExtResource("2_hn12h")]
+transform = Transform3D(-0.0044023087, 0, 0.99998057, 0, 0.66955656, 0, -0.7059415, 0, -0.0062359604, 1.814428, 0.1587233, 0.14140868)
+
+[node name="raf4" parent="." unique_id=1752063620 instance=ExtResource("2_hn12h")]
+transform = Transform3D(-0.7058929, 0, 0.013280804, 0, 0.66955656, 0, -0.009375653, 0, -0.9999118, 0.70957875, 0.1587233, -1.8751533)
+
+[node name="raf1" parent="." unique_id=725275003 instance=ExtResource("2_hn12h")]
+transform = Transform3D(0.008471699, 0, -0.999928, 0, 0.66955656, 0, 0.70590436, 0, 0.01200033, -1.4371274, 0.1587233, -0.69447)
+
+[node name="steny" parent="." unique_id=1415098952 instance=ExtResource("1_hbghi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3280277, 0, 1.2104366)
