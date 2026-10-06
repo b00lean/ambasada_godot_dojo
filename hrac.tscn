@@ -29,10 +29,12 @@ mesh = SubResource("CylinderMesh_q7aek")
 
 [node name="OkoP" type="MeshInstance3D" parent="CharacterBody3D/skin" unique_id=1908787372]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.11332762, 0.7676804, 0.5317259)
+layers = 2
 mesh = SubResource("SphereMesh_q7aek")
 
 [node name="OkoL" type="MeshInstance3D" parent="CharacterBody3D/skin" unique_id=839237535]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.2509303, 0.7676804, 0.5317259)
+layers = 2
 mesh = SubResource("SphereMesh_q7aek")
 
 [node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1986013927]
@@ -40,4 +42,5 @@ transform = Transform3D(1.6583693, 0, 0, 0, 1.5027236, 0, 0, 0, 1.7132202, 0, -0
 shape = SubResource("CapsuleShape3D_q7aek")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=423733188]
-transform = Transform3D(-0.9996962, 0.0066772103, 0.023725202, 0.0116107855, 0.97668576, 0.21435946, -0.021740742, 0.2145698, -0.97646666, 0.059716314, 0.945987, 0.64634115)
+transform = Transform3D(-0.9996962, 0.006677211, 0.023725199, 0.0116107855, 0.9766859, 0.21435948, -0.021740742, 0.21456984, -0.97646666, 0.059716314, 0.945987, 0.36058718)
+cull_mask = 1048573
