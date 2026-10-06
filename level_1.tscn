@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bnk5ubfrreimi"]
 
-[ext_resource type="PackedScene" uid="uid://dwmoetm8g00ei" path="res://mistnost_1/steny.fbx" id="1_hbghi"]
 [ext_resource type="PackedScene" uid="uid://d34btxlehslvl" path="res://raf_dvere.tscn" id="2_hn12h"]
 [ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="3_hn12h"]
+[ext_resource type="PackedScene" uid="uid://gryfltod6igq" path="res://steny2.tscn" id="3_ihfcg"]
 
 [node name="Node3D" type="Node3D" unique_id=1732787111]
 
@@ -18,8 +18,8 @@ transform = Transform3D(-0.7058929, 0, 0.013280804, 0, 0.66955656, 0, -0.0093756
 [node name="raf1" parent="." unique_id=725275003 instance=ExtResource("2_hn12h")]
 transform = Transform3D(0.008471699, 0, -0.999928, 0, 0.66955656, 0, 0.70590436, 0, 0.01200033, -1.4371274, 0.1587233, -0.69447)
 
-[node name="steny" parent="." unique_id=1415098952 instance=ExtResource("1_hbghi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3280277, 0, 1.2104366)
-
 [node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("3_hn12h")]
-transform = Transform3D(0.75745255, 0, 0, 0, 0.6805374, 0, 0, 0, 0.7429377, 0.088704824, 0.58118606, -3.9228654)
+transform = Transform3D(0.43886435, 0, 0, 0, 0.4622992, 0, 0, 0, 0.4907863, 0.22087729, 0.7489656, -3.9228654)
+
+[node name="steny" parent="." unique_id=1415098952 instance=ExtResource("3_ihfcg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3304803, -0.0092737675, 1.2178962)
