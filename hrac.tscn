@@ -37,4 +37,4 @@ mesh = SubResource("SphereMesh_q7aek")
 shape = SubResource("CapsuleShape3D_q7aek")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=423733188]
-transform = Transform3D(-0.99702954, -0.025841959, 0.072555915, 0.018697035, 0.832648, 0.553487, -0.0747167, 0.5531995, -0.8296914, 0.021633238, 1.6818163, -0.0559811)
+transform = Transform3D(-0.9996962, 0.0066772103, 0.023725202, 0.0116107855, 0.97668576, 0.21435946, -0.021740742, 0.2145698, -0.97646666, 0.059716314, 0.945987, 0.64634115)
