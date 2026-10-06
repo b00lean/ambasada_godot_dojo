@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d34btxlehslvl" path="res://raf_dvere.tscn" id="2_hn12h"]
 [ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="3_hn12h"]
 [ext_resource type="PackedScene" uid="uid://gryfltod6igq" path="res://steny2.tscn" id="3_ihfcg"]
+[ext_resource type="PackedScene" uid="uid://vl20c5ki4xtj" path="res://eduardos.tscn" id="4_ihfcg"]
 
 [node name="Node3D" type="Node3D" unique_id=1732787111]
 
@@ -23,3 +24,6 @@ transform = Transform3D(0.43886435, 0, 0, 0, 0.4622992, 0, 0, 0, 0.4907863, 0.22
 
 [node name="steny" parent="." unique_id=1415098952 instance=ExtResource("3_ihfcg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3304803, -0.0092737675, 1.2178962)
+
+[node name="Eduardos" parent="." unique_id=1302132217 instance=ExtResource("4_ihfcg")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.1229538, 0.037026286, -0.5382931)
