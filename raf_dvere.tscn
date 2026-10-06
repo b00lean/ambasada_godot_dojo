@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://d34btxlehslvl"]
 
 [ext_resource type="Script" uid="uid://ccysij8yn2mx6" path="res://dvere.gd" id="1_r6pv8"]
+[ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="2_vfhyi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nrf0f"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_nrf0f"]
 size = Vector3(1, 2.2740479, 0.04748535)
@@ -85,15 +88,19 @@ _data = {
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1689725844]
 transform = Transform3D(0.006536687, -0.36676726, 0.9302898, 0.0025770287, 0.93031275, 0.36675823, -0.9999753, 0, 0.007026333, 1.2372181, 1.7765889, -0.787539)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1635935203]
-transform = Transform3D(0.99984807, -0.008720532, 0.015094921, 0.0025770282, 0.93031275, 0.36675817, -0.017241323, -0.36666355, 0.93019384, 0.7035022, 1.7765889, 0.9386178)
-
 [node name="dvere" type="Node3D" parent="." unique_id=1692322156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09477866, 0.95026493, -0.12861139)
 script = ExtResource("1_r6pv8")
 
+[node name="Area3D" type="Area3D" parent="dvere" unique_id=1023839630]
+transform = Transform3D(101.85241, 0, 0, 0, -228.23279, 0, 0, 0, 12.581562, 0.7360697, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dvere/Area3D" unique_id=20785222]
+transform = Transform3D(0.011493113, 0, 0, 0, 0.009461139, 0, 0, 0, 0.022117555, 0, 0, 0)
+shape = SubResource("BoxShape3D_nrf0f")
+
 [node name="pevne dvere" type="StaticBody3D" parent="dvere" unique_id=1782414910]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7416537, 0, -0.0005905599)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7416537, 0, -0.0005905628)
 
 [node name="dvere" type="MeshInstance3D" parent="dvere/pevne dvere" unique_id=333071667]
 mesh = SubResource("BoxMesh_nrf0f")
@@ -112,4 +119,7 @@ shape = SubResource("ConcavePolygonShape3D_j0bur")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=151486360]
 libraries/ = SubResource("AnimationLibrary_vfhyi")
 
-[connection signal="mouse_entered" from="dvere/pevne dvere" to="dvere" method="_on_pevne_dvere_mouse_entered"]
+[node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("2_vfhyi")]
+transform = Transform3D(-0.9999569, 0, 0.0092859445, 0, 1, 0, -0.0092859445, 0, -0.9999569, 0, 0.7670572, 1.4171759)
+
+[connection signal="body_entered" from="dvere/Area3D" to="dvere" method="_on_area_3d_body_entered"]

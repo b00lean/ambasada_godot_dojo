@@ -9,10 +9,15 @@ func _ready() -> void:
 
 
 
-func _on_pevne_dvere_mouse_entered() -> void:
-	if zavreno == true:
-		zavreno = false
-		$"../AnimationPlayer".play("otevreni_dveri")
-	elif zavreno == false:
-		$"../AnimationPlayer".play("zavreni_dveri")
-		zavreno = true
+func _on_area_3d_body_entered(body: CharacterBody3D) -> void:
+		if zavreno == true:
+			zavreno = false
+			$"../AnimationPlayer".play("otevreni_dveri")
+			await get_tree().create_timer(5).timeout
+		elif zavreno == false:
+			$"../AnimationPlayer".play("zavreni_dveri")
+			zavreno = true
+			await get_tree().create_timer(5).timeout
+
+
+	
