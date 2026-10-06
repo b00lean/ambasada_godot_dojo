@@ -115,6 +115,14 @@ mesh = SubResource("CylinderMesh_nrf0f")
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4139531, 0.09957296, 0.062384456)
 shape = SubResource("ConcavePolygonShape3D_j0bur")
 
+[node name="madlo2" type="MeshInstance3D" parent="dvere/pevne dvere" unique_id=826393998]
+transform = Transform3D(1.1513082e-05, 0.023620326, 0.999721, -0.99999994, 0.00048742443, -4.2612344e-11, -0.00048728843, -0.99972093, 0.023620328, 0.40815628, 0.10569775, -0.07618068)
+mesh = SubResource("CylinderMesh_nrf0f")
+
+[node name="madlo_cs2" type="CollisionShape3D" parent="dvere/pevne dvere" unique_id=470579196]
+transform = Transform3D(1.1513082e-05, 0.023620326, 0.999721, -0.99999994, 0.00048742443, -4.2612344e-11, -0.00048728843, -0.99972093, 0.023620328, 0.40815628, 0.10569775, -0.07618068)
+shape = SubResource("ConcavePolygonShape3D_j0bur")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=151486360]
 libraries/ = SubResource("AnimationLibrary_vfhyi")
 
