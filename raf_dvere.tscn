@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d34btxlehslvl"]
 
 [ext_resource type="Script" uid="uid://ccysij8yn2mx6" path="res://dvere.gd" id="1_r6pv8"]
+[ext_resource type="PackedScene" uid="uid://6ejmesbdqnen" path="res://hrac.tscn" id="2_vfhyi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nrf0f"]
 
@@ -45,6 +46,21 @@ tracks/1/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_bteal"]
+resource_name = "otevreni dveri2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dvere:rotation:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.5699999999999998]
+}
+
 [sub_resource type="Animation" id="Animation_r6pv8"]
 resource_name = "otevreni_dveri"
 tracks/0/type = "value"
@@ -57,7 +73,22 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 1.5699999999999998]
+"values": [0.0, -1.5699999999999998]
+}
+
+[sub_resource type="Animation" id="Animation_0kj8p"]
+resource_name = "zavreni dveri 2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dvere:rotation:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5699999999999998, 0.0]
 }
 
 [sub_resource type="Animation" id="Animation_vfhyi"]
@@ -72,13 +103,15 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [1.5699999999999998, 0.0]
+"values": [-1.5699999999999998, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vfhyi"]
 _data = {
 &"RESET": SubResource("Animation_hoc0i"),
+&"otevreni dveri2": SubResource("Animation_bteal"),
 &"otevreni_dveri": SubResource("Animation_r6pv8"),
+&"zavreni dveri 2": SubResource("Animation_0kj8p"),
 &"zavreni_dveri": SubResource("Animation_vfhyi")
 }
 
@@ -92,10 +125,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09477866, 0.95026493, -0.1
 script = ExtResource("1_r6pv8")
 
 [node name="Area3D" type="Area3D" parent="dvere" unique_id=1023839630]
-transform = Transform3D(101.85241, 0, 0, 0, -228.23279, 0, 0, 0, 12.581562, 0.7360697, 0, 0)
+transform = Transform3D(-101.83135, 0, 0.255853, 0, -228.23279, 0, -2.071225, 0, -12.57896, 0.7360697, 0, -0.01686579)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="dvere/Area3D" unique_id=20785222]
-transform = Transform3D(0.011493113, 0, 0, 0, 0.009461139, 0, 0, 0, 0.022117555, 0, 0, 0)
+transform = Transform3D(0.0075927624, 0, 3.637979e-12, 0, 0.009461139, 0, 0, 0, 0.0062722554, 0, 0, 0.0037529971)
+shape = SubResource("BoxShape3D_nrf0f")
+
+[node name="Area3D2" type="Area3D" parent="dvere" unique_id=2030330584]
+transform = Transform3D(-101.813034, 0, 0.34980246, 0, -228.23279, 0, -2.8317807, 0, -12.576698, 0.7360697, 0, -0.43269855)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="dvere/Area3D2" unique_id=88680065]
+transform = Transform3D(0.0081989085, 0, 0, 0, 0.009461139, 0, 1.1641532e-10, 0, 0.004783969, 0, 0, -0.038459867)
 shape = SubResource("BoxShape3D_nrf0f")
 
 [node name="pevne dvere" type="StaticBody3D" parent="dvere" unique_id=1782414910]
@@ -126,4 +166,8 @@ shape = SubResource("ConcavePolygonShape3D_j0bur")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=151486360]
 libraries/ = SubResource("AnimationLibrary_vfhyi")
 
+[node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("2_vfhyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6587684, -5.12366)
+
 [connection signal="body_entered" from="dvere/Area3D" to="dvere" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="dvere/Area3D2" to="dvere" method="_on_area_3d_2_body_entered"]
