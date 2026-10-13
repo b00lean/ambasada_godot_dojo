@@ -8,7 +8,7 @@
 [sub_resource type="SphereMesh" id="SphereMesh_q7aek"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q7aek"]
-radius = 0.39648438
+radius = 0.31933594
 height = 1.7177734
 
 [node name="Hrac" type="Node3D" unique_id=996799960]
@@ -42,5 +42,5 @@ transform = Transform3D(1.6583693, 0, 0, 0, 1.5027236, 0, 0, 0, 1.7132202, 0, -0
 shape = SubResource("CapsuleShape3D_q7aek")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=423733188]
-transform = Transform3D(-0.9996962, 0.006677211, 0.023725199, 0.0116107855, 0.9766859, 0.21435948, -0.021740742, 0.21456984, -0.97646666, 0.059716314, 0.945987, 0.36058718)
+transform = Transform3D(-0.9996962, 0.0066772136, 0.023725202, 0.023781635, 0.008503316, 0.99968106, 0.006473341, 0.9999415, -0.008659529, -0.02363959, 4.781374, 0.12021977)
 cull_mask = 1048573
