@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://soxl0rup16sv"]
+
+[ext_resource type="PackedScene" uid="uid://corga6trwms28" path="res://addons/quaternius/universalbasecharacters/Regular_Female_OnlyHead.gltf" id="1_pe48k"]
+[ext_resource type="PackedScene" uid="uid://oj1cg2smdb35" path="res://addons/quaternius/Modular Parts/Female_Knight_Body_Armor.gltf" id="2_ytj8x"]
+[ext_resource type="PackedScene" uid="uid://lq84ng841f68" path="res://addons/quaternius/Modular Parts/Female_Knight_Acc_Pauldrons_Round.gltf" id="3_uq72y"]
+[ext_resource type="PackedScene" uid="uid://b61tbj7aq0ge6" path="res://addons/quaternius/Modular Parts/Female_Knight_Acc_Scarf.gltf" id="4_ogww6"]
+[ext_resource type="PackedScene" uid="uid://e87s68xqlgiu" path="res://addons/quaternius/Modular Parts/Female_Ranger_Legs.gltf" id="5_frrsl"]
+[ext_resource type="PackedScene" uid="uid://frwjaol2vrtc" path="res://addons/quaternius/Modular Parts/Female_Wizard_Feet.gltf" id="6_h3s2q"]
+[ext_resource type="PackedScene" uid="uid://dgisgia0ipta8" path="res://addons/quaternius/universalbasecharacters/Hairstyles/Rigged to Head Bone/Female/Hair_Buns_Teen.gltf" id="7_t2275"]
+[ext_resource type="PackedScene" uid="uid://dv66vb02vkb62" path="res://addons/quaternius/Modular Parts/Female_Wizard_Arms.gltf" id="8_ytj8x"]
+
+[node name="Node3D" type="Node3D" unique_id=1272306533]
+
+[node name="Regular_Female_OnlyHead3" parent="." unique_id=540438662 instance=ExtResource("1_pe48k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20681262, 0.1483829, 0.46024704)
+
+[node name="Regular_Female_OnlyHead4" parent="." unique_id=1976613862 instance=ExtResource("2_ytj8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21031737, 0.15156329, 0.4626522)
+
+[node name="Regular_Female_OnlyHead5" parent="." unique_id=1009592122 instance=ExtResource("3_uq72y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20475149, 0.1483829, 0.480505)
+
+[node name="Regular_Female_OnlyHead6" parent="." unique_id=1198664668 instance=ExtResource("4_ogww6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20770407, 0.16432106, 0.41819763)
+
+[node name="Regular_Female_OnlyHead7" parent="." unique_id=1800319101 instance=ExtResource("5_frrsl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21293223, 0.1483829, 0.4620514)
+
+[node name="Regular_Female_OnlyHead8" parent="." unique_id=409334754 instance=ExtResource("6_h3s2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20337868, 0.1483829, 0.46769714)
+
+[node name="Regular_Female_OnlyHead9" parent="." unique_id=1419703601 instance=ExtResource("7_t2275")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20833004, 0.4118485, 0.4559517)
+
+[node name="Female_Wizard_Arms2" parent="." unique_id=1036199387 instance=ExtResource("8_ytj8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21751416, 0.185687, 0.47760344)
