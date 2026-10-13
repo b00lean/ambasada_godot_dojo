@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://vl20c5ki4xtj"]
+
+[ext_resource type="PackedScene" uid="uid://o480tw4vodm0" path="res://Eduardos.fbx" id="1_sfrxd"]
+[ext_resource type="Material" uid="uid://kr451dcoik2o" path="res://mistnost_1/Plywood_08_1K.tres" id="2_0fyy2"]
+
+[node name="Eduardos" unique_id=1302132217 instance=ExtResource("1_sfrxd")]
+
+[node name="Mesh2" parent="Model" parent_id_path=PackedInt32Array(1263743160) index="1" unique_id=1652464649]
+material_override = ExtResource("2_0fyy2")
