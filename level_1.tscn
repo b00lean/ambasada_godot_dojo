@@ -9,16 +9,16 @@
 [node name="Node3D" type="Node3D" unique_id=1732787111]
 
 [node name="raf2" parent="." unique_id=930087524 instance=ExtResource("2_hn12h")]
-transform = Transform3D(0.7059552, 0, 0, 0, 0.6695566, 0, 0, 0, 1, -0.24441126, 0.1587233, 1.3227744)
+transform = Transform3D(0.7059552, 0, 0, 0, 0.6695566, 0, 0, 0, 1, -0.16728057, 0.1587233, 1.0915449)
 
 [node name="raf3" parent="." unique_id=217422507 instance=ExtResource("2_hn12h")]
-transform = Transform3D(-0.0044023087, 0, 0.99998057, 0, 0.66955656, 0, -0.7059415, 0, -0.0062359604, 1.814428, 0.1587233, 0.14140868)
+transform = Transform3D(-0.0044023087, 0, 0.99998057, 0, 0.66955656, 0, -0.7059415, 0, -0.0062359604, 1.6718665, 0.1587233, 0.045538187)
 
 [node name="raf4" parent="." unique_id=1752063620 instance=ExtResource("2_hn12h")]
-transform = Transform3D(-0.7058929, 0, 0.013280804, 0, 0.66955656, 0, -0.009375653, 0, -0.9999118, 0.70957875, 0.1587233, -1.8751533)
+transform = Transform3D(-0.7058929, 0, 0.013280804, 0, 0.66955656, 0, -0.009375653, 0, -0.9999118, 0.6098218, 0.1587233, -1.7718866)
 
 [node name="raf1" parent="." unique_id=725275003 instance=ExtResource("2_hn12h")]
-transform = Transform3D(0.008471699, 0, -0.999928, 0, 0.66955656, 0, 0.70590436, 0, 0.01200033, -1.4371274, 0.1587233, -0.69447)
+transform = Transform3D(0.008471699, 0, -0.999928, 0, 0.66955656, 0, 0.70590436, 0, 0.01200033, -1.352241, 0.1587233, -0.60847664)
 
 [node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("3_hn12h")]
 transform = Transform3D(0.43886435, 0, 0, 0, 0.4622992, 0, 0, 0, 0.4907863, 0.22087729, 0.7489656, -3.9228654)
