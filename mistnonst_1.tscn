@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://stxo1ak1mfeh"]
 
+[ext_resource type="Texture2D" uid="uid://debtbgeku03m1" path="res://INVENTÁŘ - kopie.svg" id="2_r7gci"]
 [ext_resource type="PackedScene" uid="uid://bnk5ubfrreimi" path="res://level_1.tscn" id="3_j2bjl"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_h573q"]
@@ -20,3 +21,10 @@ shape = SubResource("BoxShape3D_pj2cf")
 
 [node name="1 level buuuuuuuuuuuuuuggggggggggggg" parent="." unique_id=1442929259 instance=ExtResource("3_j2bjl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.070279, 0.7864336, -2.413353)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=579510518]
+
+[node name="InventářKopie" type="Sprite2D" parent="." unique_id=1652558691]
+position = Vector2(597, 582.00006)
+scale = Vector2(0.7466607, 0.75566745)
+texture = ExtResource("2_r7gci")
