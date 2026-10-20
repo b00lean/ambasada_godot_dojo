@@ -2,22 +2,28 @@
 
 [ext_resource type="Script" uid="uid://dwlj7lfdq6mei" path="res://character_body_3d.gd" id="1_nywu3"]
 [ext_resource type="PackedScene" uid="uid://c133d4v11ybf4" path="res://player/Robert.tscn" id="2_nywu3"]
+[ext_resource type="Script" uid="uid://cyqaf1tdpdsx4" path="res://rotateCameraDOJO.gd" id="3_skimb"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q7aek"]
-radius = 0.1640625
-height = 1.2580566
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h573q"]
+radius = 0.32226563
+height = 2.3132935
 
 [node name="Hrac" type="Node3D" unique_id=996799960]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1417096875]
 script = ExtResource("1_nywu3")
 
-[node name="Male_Ranger" parent="CharacterBody3D" unique_id=1482634803 instance=ExtResource("2_nywu3")]
+[node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1418028313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1382676, 0.99421144, -0.7118504)
+shape = SubResource("CapsuleShape3D_h573q")
 
-[node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1986013927]
-transform = Transform3D(1.6583693, 0, 0, 0, 1.5027236, 0, 0, 0, 1.7132202, 0, 0.8110212, 0)
-shape = SubResource("CapsuleShape3D_q7aek")
+[node name="pivot" type="Node3D" parent="CharacterBody3D" unique_id=2142810737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1332074, 1.6033471, -0.518878)
+script = ExtResource("3_skimb")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=423733188]
-transform = Transform3D(-0.9996962, 0.0066772136, 0.023725204, 0.01766878, 0.8652811, 0.5009755, -0.017183851, 0.5012425, -0.8651362, -0.02363959, 1.9191527, -1.0767763)
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/pivot" unique_id=423733188]
+transform = Transform3D(-0.9996962, 0.006677211, 0.023725199, 0.0116107855, 0.9766859, 0.21435948, -0.021740742, 0.21456984, -0.97646666, 0.038193583, 0.11615491, -0.97285736)
 cull_mask = 1048573
+
+[node name="Male_Ranger" parent="CharacterBody3D" unique_id=1482634803 instance=ExtResource("2_nywu3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0889204, 0, -0.9582929)

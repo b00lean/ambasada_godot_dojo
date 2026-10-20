@@ -2,7 +2,21 @@
 
 [ext_resource type="PackedScene" uid="uid://bnk5ubfrreimi" path="res://level_1.tscn" id="3_j2bjl"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_h573q"]
+size = Vector3(2.97583, 1, 3.2333984)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pj2cf"]
+size = Vector3(1.987793, 1, 3.2266846)
+
 [node name="Node3D" type="Node3D" unique_id=1474800511]
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2078418722]
+transform = Transform3D(1.2477127, 0, 0, 0, 0.66827846, 0, 0, 0, 0.86909515, -3.9035869, 0.8739264, -5.7969904)
+mesh = SubResource("BoxMesh_h573q")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D" unique_id=505403498]
+transform = Transform3D(1.985882, 0, 0, 0, 1.0000005, 0, 0, 0, 1, -0.49389648, 0, -0.0023818016)
+shape = SubResource("BoxShape3D_pj2cf")
+
 [node name="1 level buuuuuuuuuuuuuuggggggggggggg" parent="." unique_id=1442929259 instance=ExtResource("3_j2bjl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5586658, 0.23119879, -0.08973718)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.070279, 0.7864336, -2.413353)
