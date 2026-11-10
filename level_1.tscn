@@ -21,7 +21,7 @@ transform = Transform3D(-0.7058929, 0, 0.013280804, 0, 0.66955656, 0, -0.0093756
 transform = Transform3D(0.008471699, 0, -0.999928, 0, 0.66955656, 0, 0.70590436, 0, 0.01200033, -1.352241, 0.1587233, -0.60847664)
 
 [node name="Hrac" parent="." unique_id=996799960 instance=ExtResource("3_hn12h")]
-transform = Transform3D(0.43886435, 0, 0, 0, 0.4622992, 0, 0, 0, 0.4907863, 0.22087729, 0.11332148, -0.8289695)
+transform = Transform3D(0.15684865, 0, 0, 0, 0.15359537, 0, 0, 0, 0.1783371, 0.22087729, 0.11332148, -0.8289695)
 
 [node name="steny" parent="." unique_id=1415098952 instance=ExtResource("3_ihfcg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3304803, -0.0092737675, 1.2178962)
