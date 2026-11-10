@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://stxo1ak1mfeh"]
 
 [ext_resource type="Texture2D" uid="uid://debtbgeku03m1" path="res://INVENTÁŘ - kopie.svg" id="2_r7gci"]
+[ext_resource type="Texture2D" uid="uid://p8xrjmyve123" path="res://srdce.svg" id="3_6x32e"]
 [ext_resource type="PackedScene" uid="uid://bnk5ubfrreimi" path="res://level_1.tscn" id="3_j2bjl"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_h573q"]
@@ -8,6 +9,15 @@ size = Vector3(2.97583, 1, 3.2333984)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pj2cf"]
 size = Vector3(1.987793, 1, 3.2266846)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yteuk"]
+font_size = 40
+font_color = Color(0.5200528, 0.00019310057, 0.52004904, 1)
+
+[sub_resource type="Theme" id="Theme_yteuk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cgtqf"]
+font_size = 40
 
 [node name="Node3D" type="Node3D" unique_id=1474800511]
 
@@ -28,3 +38,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.070279, 0.7864336, -2.4133
 position = Vector2(597, 582.00006)
 scale = Vector2(0.7466607, 0.75566745)
 texture = ExtResource("2_r7gci")
+
+[node name="Srdce" type="Sprite2D" parent="." unique_id=684979627]
+position = Vector2(57, 63.999985)
+scale = Vector2(0.19647355, 0.18210152)
+texture = ExtResource("3_6x32e")
+
+[node name="Label" type="Label" parent="." unique_id=1533383881]
+offset_left = 991.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 59.0
+text = "LEVEL: 1"
+label_settings = SubResource("LabelSettings_yteuk")
+
+[node name="Label2" type="Label" parent="." unique_id=413624727]
+offset_left = 38.0
+offset_top = 26.0
+offset_right = 197.0
+offset_bottom = 216.0
+theme = SubResource("Theme_yteuk")
+theme_override_colors/font_color = Color(0, 0.79383254, 0.79383266, 1)
+text = "57"
+label_settings = SubResource("LabelSettings_cgtqf")
