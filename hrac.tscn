@@ -6,7 +6,11 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h573q"]
 radius = 0.32226563
-height = 2.0033264
+height = 2.3132935
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_q1ghk"]
+top_radius = 0.103027344
+bottom_radius = 0.103027344
 
 [node name="Hrac" type="Node3D" unique_id=996799960]
 
@@ -14,16 +18,22 @@ height = 2.0033264
 script = ExtResource("1_nywu3")
 
 [node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1418028313]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1382676, 0.8392279, -0.58029294)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0063511133, 0.99421144, 0.027733803)
 shape = SubResource("CapsuleShape3D_h573q")
 
 [node name="pivot" type="Node3D" parent="CharacterBody3D" unique_id=2142810737]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1332074, 1.6033471, -0.518878)
-script = ExtResource("3_skimb")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009, 1.6, -1)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/pivot" unique_id=423733188]
-transform = Transform3D(-0.9996962, 0.006677211, 0.023725199, 0.0116107855, 0.9766859, 0.21435948, -0.021740742, 0.21456984, -0.97646666, 0.038193583, 0.11615491, -0.97285736)
+transform = Transform3D(-0.9997015, -0.0052464753, 0.023862338, 0, 0.9766723, 0.21473533, -0.024432287, 0.21467122, -0.97638077, 0, 0, 0)
 cull_mask = 1048573
+current = true
+fov = 74.905014
+script = ExtResource("3_skimb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/pivot/Camera3D" unique_id=191488210]
+transform = Transform3D(-0.99969625, 0.006248261, -0.023841757, 0.0066772117, 0.9998166, -0.017954603, 0.0237252, -0.018108383, -0.999555, -0.022160232, 0.00014817715, 0.0005258322)
+mesh = SubResource("CylinderMesh_q1ghk")
 
 [node name="Male_Ranger" parent="CharacterBody3D" unique_id=1482634803 instance=ExtResource("2_nywu3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0889204, 0, -0.9582929)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0027029514, 0, 0.07553625)
