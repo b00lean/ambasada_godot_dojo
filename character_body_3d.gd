@@ -1,20 +1,24 @@
 extends CharacterBody3D
 
-@export var speed: float = 5.0
+@export var speed: float = 2.5
 
 func _physics_process(_delta: float) -> void:
 	var input_dir := Vector2.ZERO
 
 	# WASD
 	if Input.is_key_pressed(KEY_A):
-		input_dir.x -= 1.0
-	if Input.is_key_pressed(KEY_D):
-		input_dir.x += 1.0
-	if Input.is_key_pressed(KEY_W):
-		input_dir.y -= 1.0
-	if Input.is_key_pressed(KEY_S):
-		input_dir.y += 1.0
-
+		input_dir.x -= 0.1
+	elif Input.is_key_pressed(KEY_D):
+		input_dir.x += 0.1
+	elif Input.is_key_pressed(KEY_W):
+		input_dir.y -= 0.1
+		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Walk")
+	elif Input.is_key_pressed(KEY_S):
+		input_dir.y += 0.1
+	else:
+		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Idle")
+		
+		
 	input_dir = input_dir.normalized()
 
 	# Movement relative to the character's rotation
@@ -38,3 +42,5 @@ func _physics_process(_delta: float) -> void:
 	velocity.y = 0.0
 
 	move_and_slide()
+	
+	
