@@ -8,8 +8,10 @@ func _physics_process(_delta: float) -> void:
 	# WASD
 	if Input.is_key_pressed(KEY_A):
 		input_dir.x -= 0.1
+		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Walk")
 	elif Input.is_key_pressed(KEY_D):
 		input_dir.x += 0.1
+		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Walk")
 	elif Input.is_key_pressed(KEY_W):
 		input_dir.y -= 0.1
 		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Walk")
@@ -18,7 +20,9 @@ func _physics_process(_delta: float) -> void:
 	else:
 		$Male_Ranger/AnimationPlayer.play("PlayerAnimations/Idle")
 		
-		
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().quit()
+	
 	input_dir = input_dir.normalized()
 
 	# Movement relative to the character's rotation

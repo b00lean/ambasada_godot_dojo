@@ -8,10 +8,6 @@
 radius = 0.32226563
 height = 2.3132935
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_q1ghk"]
-top_radius = 0.103027344
-bottom_radius = 0.103027344
-
 [node name="Hrac" type="Node3D" unique_id=996799960]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1417096875]
@@ -30,10 +26,6 @@ cull_mask = 1048573
 current = true
 fov = 74.905014
 script = ExtResource("3_skimb")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/pivot/Camera3D" unique_id=191488210]
-transform = Transform3D(-0.99969625, 0.006248261, -0.023841757, 0.0066772117, 0.9998166, -0.017954603, 0.0237252, -0.018108383, -0.999555, -0.022160232, 0.00014817715, 0.0005258322)
-mesh = SubResource("CylinderMesh_q1ghk")
 
 [node name="Male_Ranger" parent="CharacterBody3D" unique_id=1482634803 instance=ExtResource("2_nywu3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0027029514, 0, 0.07553625)
