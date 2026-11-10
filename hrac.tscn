@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h573q"]
 radius = 0.32226563
-height = 2.3132935
+height = 2.0033264
 
 [node name="Hrac" type="Node3D" unique_id=996799960]
 
@@ -14,7 +14,7 @@ height = 2.3132935
 script = ExtResource("1_nywu3")
 
 [node name="CS" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1418028313]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1382676, 0.99421144, -0.7118504)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1382676, 0.8392279, -0.58029294)
 shape = SubResource("CapsuleShape3D_h573q")
 
 [node name="pivot" type="Node3D" parent="CharacterBody3D" unique_id=2142810737]

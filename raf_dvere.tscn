@@ -127,14 +127,14 @@ script = ExtResource("1_r6pv8")
 transform = Transform3D(-101.83135, 0, 0.255853, 0, -228.23279, 0, -2.071225, 0, -12.57896, 0.5169909, 0, -0.01686579)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="dvere/Area3D" unique_id=20785222]
-transform = Transform3D(0.0075927624, 0, 3.637979e-12, 0, 0.009461139, 0, 0, 0, 0.0062722554, 0, 0, 0.0037529971)
+transform = Transform3D(0.0075927624, 0, 5.456968e-12, 0, 0.009461139, 0, 1.1641532e-10, 0, 0.006272256, 1.4032703e-05, 0, 0.009338152)
 shape = SubResource("BoxShape3D_nrf0f")
 
 [node name="Area3D2" type="Area3D" parent="dvere" unique_id=2030330584]
 transform = Transform3D(-101.813034, 0, 0.34980246, 0, -228.23279, 0, -2.8317807, 0, -12.576698, 0.5169909, 0, -0.43269855)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="dvere/Area3D2" unique_id=88680065]
-transform = Transform3D(0.0081989085, 0, 0, 0, 0.009461139, 0, 1.1641532e-10, 0, 0.004783969, 0, 0, -0.038459867)
+transform = Transform3D(0.0081989085, 0, 0, 0, 0.009461139, 0, 1.1641532e-10, 0, 0.0047839684, -1.4665071e-05, 0, -0.042728182)
 shape = SubResource("BoxShape3D_nrf0f")
 
 [node name="pevne dvere" type="StaticBody3D" parent="dvere" unique_id=1782414910]
